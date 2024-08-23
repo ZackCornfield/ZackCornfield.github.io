@@ -14,12 +14,14 @@
     <div class="container">
         <nav>
             <img src="media/images/logo_transparent.png" alt="logo" class="logo">   
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li> 
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li> 
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>  
         <div class="header-text">
             <p>Uni Student</p>
@@ -121,25 +123,27 @@
     </div>
 </div>
 <!---------------------contact---------------------------->
-<div class="contact">
+<div id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
                 <h1 class="sub-title">Contact Me</h1>
-                <p>zack.cornfield02@gmail.com</p>
-                <p>+61 448 934 446</p>
+                <p><i class="fa-solid fa-envelope"></i> zack.cornfield02@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +61 448 934 446</p>
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/zack-cornfield-9a2902236/"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/ZackCornfield/ZackCornfield"><i class="fa-brands fa-github"></i></a>
                 </div>
-            </div>
+                <a href="media/Resume.pdf" download class="btn btn2">Download CV</a>
+            </div> 
             <div class="contact-right">
-                <form>
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="Email" placeholder="Email">
-                    <textarea placeholder="Message"></textarea>
-                    <input type="submit" value="Send">
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>   
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
@@ -159,6 +163,38 @@
         event.currentTarget.classList.add("active-link");   
         document.getElementById(tabname).classList.add("active-tab");
     }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById('sidemenu');
+
+    function closemenu() {
+        sidemenu.style.right = '-200px';
+    }
+
+    function openmenu() {
+        sidemenu.style.right = '0';
+    }
+</script>
+  
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzdWeIy4d1J8PnpcyWU6Fc_f4uwSZdZDlkOCextQG_HBPklu1KfT0oQJryPU-NMHM0I/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById('msg');
+
+form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        msg.innerHTML = "Message sent successfully!";
+        setTimeout(function() {
+            msg.innerHTML = ""; 
+        }, 5000);
+        form.reset();
+    })
+    .catch(error => console.error('Error!', error.message))
+})
 </script>
 
 </body>
