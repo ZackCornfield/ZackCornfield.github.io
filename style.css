@@ -1,3 +1,5 @@
+/* -----------------Global CSS----------------- */
+
 *{
     margin: 0;
     padding: 0;
@@ -76,7 +78,7 @@ nav ul li a:hover::after{
     color: #8b8a8a
 }
 
-/* ----------------about----------------- */
+/* ----------------home-page-about----------------- */
 
 #about{
     padding: 80px 0;
@@ -154,7 +156,7 @@ nav ul li a:hover::after{
     display: block; 
 }
 
-/* -----------------portfolio----------------- */
+/* -----------------home-page-portfolio----------------- */
 
 #portfolio{
     padding: 50px 0; 
@@ -247,7 +249,7 @@ nav ul li a:hover::after{
     background: #ff004f;
 }
 
-/* -----------------contact----------------- */
+/* -----------------home-page-contact----------------- */
 
 .contact-left{
     flex-basis: 35%;
@@ -406,4 +408,204 @@ nav .fa-solid{
     opacity: 1; /* Show when it contains text */
     visibility: visible; /* Show when it contains text */
     transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; /* Add transition */
+}
+
+/*-----------------portfolio-page-----------------*/
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    margin-top: 30px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    background-color: #303030;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.work img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer {
+    color: white;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 10px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 40px;
+    background: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Button color */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.home-button:hover {
+    background-color: #45a049; /* Hover color */
+}
+
+#portfolio .sub-title{
+    margin-top: 50px;
+}
+
+/*-----------------projects-page-----------------------*/ 
+
+/* -----------------Projects Page----------------- */
+
+.project-details {
+    margin-top: 50px;
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-details h2 {
+    color: #ff004f;
+    border-bottom: 2px solid #ff004f;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.project-details p, .project-details ul li {
+    color: #dcdcdc;
+    line-height: 1.6;
+}
+
+.project-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-details ul li {
+    margin-bottom: 8px;
+}
+
+.trailer-container {
+    display: none; /* Hide by default */
+    margin-bottom: 30px;
+}
+
+.trailer-container video {
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.features {
+    margin-top: 20px;
+}
+
+.feature {
+    margin-bottom: 30px;
+    background: #3a3a3a;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    margin: 0 0 10px 0;
+    color: #ff004f;
+    font-size: 20px;
+}
+
+.feature p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* -----------------Responsive Design----------------- */
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .header-text h1 {
+        font-size: 40px;
+    }
+
+    .project-details {
+        padding: 15px;
+    }
+
+    .trailer-container video {
+        width: 100%;
+    }
+
+    .feature {
+        padding: 10px;
+    }
+
+    .feature h3 {
+        font-size: 18px;
+    }
+
+    .feature p {
+        font-size: 14px;
+    }
 }

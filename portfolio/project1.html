@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Title | Zack Cornfield</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="project-page">
+    <div class="container">
+        <nav>
+            <img src="/media/images/logo_transparent.png" alt="logo" class="logo">   
+            <ul id="sidemenu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav> 
+        <header>
+            <h1>Noo Noo Adventure - Game Engine</h1>
+        </header>
+        
+        <section class="project-details">
+            <h2>PROJECT TYPE</h2>
+            <p>University Project - C++, GLFW (OpenGL), LUA, ImGUI, Stb_image, CMAKE, GitHub</p>
+
+            <h2>Description</h2>
+            <p>A small demo game, "Noo Noo's Adventure", used to demonstrate the game engine we developed throughout the semester. The game follows Noo Noo the vacuum as you try and survive against the evil teletubbies.</p>
+
+            <h2>LAST UPDATED</h2>
+            <p>2024</p>
+
+            <h2>Development Team</h2>
+            <ul>
+                <li>Zack Cornfield</li>
+                <li>Thomas Stiles</li>
+                <li>Jacob Mondi</li>
+                <li>Milad Rakhshbahar</li>
+            </ul>
+
+            <h2>Project Planning and Tools</h2>
+            <ul>
+                <li>Weekly meetings</li>
+                <li>Trello</li>
+                <li>Git with GitHub for source control</li>
+                <li>GitHub Desktop</li>
+                <li>Doxygen</li>
+                <li>Microsoft Project</li>
+            </ul>
+
+            <h2>Features Developed by Me</h2>
+
+            <div class="feature">
+                <h3>Terrain</h3>
+                <img src="../media/images/NooNooAdventure_Terrain.png" alt="Terrain Feature">
+                <p>Implemented heightmap and fault noise generation to create realistic and dynamic terrain. Designed the texturing logic to allow the terrain to be textured with four combined textures based on varying heights, enhancing visual diversity and realism in the environment.</p>
+            </div>
+
+            <div class="feature">
+                <h3>GUI</h3>
+                <img src="../media/images/NooNooAdventure_GUI.png" alt="GUI Feature">
+                <p>Developed a facade for the IMGUI library, enabling users to add GUI elements via LUA scripts. This system supports various interactive components, such as buttons, allowing for flexible and dynamic user interfaces within the game.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Water</h3>
+                <img src="../media/images/NooNooAdventure_Water.png" alt="Water Feature">
+                <p>Engineered the water rendering and creation logic, incorporating advanced shader logic with DUDV maps, frame buffers, and reflection and refraction textures. This results in realistic and visually appealing water effects that enhance the game's immersive experience.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Graphics Library Abstraction</h3>
+                <p>Created a facade for the GLFW/OpenGL library, allowing for the use of multiple window types. This abstraction ensures the engine's flexibility and adaptability for future enhancements and changes.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Skybox</h3>
+                <img src="../media/images/NooNooAdventure_Skybox.png" alt="Skybox Feature">
+                <p>Managed the skybox system, handling all aspects of texturing and rendering. This feature creates a seamless and immersive background environment, contributing to the overall aesthetic and depth of the game world.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Camera System</h3>
+                <p>Developed the complete camera system, writing the class and incorporating all necessary logic for smooth and dynamic camera movements. This system supports various camera behaviors, enhancing the player's visual experience and interaction within the game.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Rendering Logic</h3>
+                <img src="../media/images/NooNooAdventure_AI.png" alt="Rendering Logic Feature">
+                <p>Contributed to the mesh rendering process by iterating through all entities with meshes and implementing the logic to render them. Developed the texture manager system for efficient loading and usage of textures, the shader manager for handling shader programs, and the material manager for managing material properties and components. These systems collectively ensure efficient and high-quality rendering within the game engine.</p>
+            </div>
+        </section>
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>

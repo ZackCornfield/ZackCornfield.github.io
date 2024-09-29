@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Title | Zack Cornfield</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="project-page">
+    <div class="container">
+        <nav>
+            <img src="/media/images/logo_transparent.png" alt="logo" class="logo">   
+            <ul id="sidemenu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav> 
+        <header>
+            <h1>Altitude Awaits - Game Engine</h1>
+        </header>
+        
+        <section class="project-details">
+            <h2>PROJECT TYPE</h2>
+            <p>University Project - C++, GLFW (OpenGL), ImGUI, Stb_image, GitHub</p>
+
+            <h2>Description</h2>
+            <p>A small demo game, "Altitude Awaits", used to demonstrate the game engine we developed throughout the semester. The game is similar to other platform games like only up where your goals is to make it to the top in to win, in this game you must make use of the jump platforms and dash mechanics to spring from one platform another and make your way up.</p>
+
+            <h2>LAST UPDATED</h2>
+            <p>2023</p>
+
+            <h2>Development Team</h2>
+            <ul>
+                <li>Zack Cornfield</li>
+                <li>Thomas Stiles</li>
+                <li>Jacob Mondi</li>
+                <li>Milad Rakhshbahar</li>
+            </ul>
+
+            <h2>Project Planning and Tools</h2>
+            <ul>
+                <li>Weekly meetings</li>
+                <li>Trello</li>
+                <li>Git with GitHub for source control</li>
+                <li>GitHub Desktop</li>
+                <li>Doxygen</li>
+            </ul>
+
+            <div class="trailer-container" id="trailer-container">
+                <h2>Trailer</h2>
+                <!-- Trailer video element -->
+                <video id="trailer-video" controls>
+                    <source src="/media/videos/AltitudeAwaits_GameplayTrailer.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <h2>Features Developed by Me</h2>
+
+            <div class="feature">
+                <h3>Rendering and Texturing</h3>
+                <p>The rendering and texturing system in "Altitude Awaits" was designed using the GLFW graphics library. With this I implemented custom texture classes and shaders that efficiently load and apply textures to objects.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Multiple Material Logic</h3>
+                <img src="../media/images/AltitudeAwaits_Platforms.png" alt="Material Feature">
+                <p>"Altitude Awaits" supports multiple materials for a single entity, allowing for more intricate visual representations of objects. This feature is particularly useful for creating detailed models that require different textures or material properties, such as reflections and transparency, enhancing the overall realism.</p>
+            </div>
+
+            <div class="feature">
+                <h3>OBJ Loading and Entity Class</h3>
+                <img src="../media/images/AltitudeAwaits_Models.png" alt="OBJ/Entity Feature">
+                <p>Contributed to the development of the OBJ loading system, which imports 3D models from external files into the game. This feature supports a wide range of models, enabling easy asset integration. Additionally, worked on the Entity class to manage game objects effectively, providing a robust framework for placing and manipulating objects in the game world.</p>
+            </div>
+
+            <div class="feature">
+                <h3>User Interface/Menu System using ImGui</h3>
+                <img src="../media/images/AltitudeAwaits_GUI.png" alt="Menu Feature">
+                <p>Designed and implemented the UI using ImGui, a powerful and flexible immediate-mode GUI library. This allowed me to create a basic UI system for our game allowing the user to start/exit the game whilst keeping track of their highscore.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Basic Scene Manager</h3>
+                <p>Built the foundation for a basic SceneManager, which handles switching between different scenes or levels in the game. This functionality is crucial for managing different environments, game states, and transitions, enabling a structured workflow for developers when expanding the game.
+
+                </p>
+            </div>
+        </section>
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>

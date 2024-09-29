@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Title | Zack Cornfield</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="project-page">
+    <div class="container">
+        <nav>
+            <img src="/media/images/logo_transparent.png" alt="logo" class="logo">   
+            <ul id="sidemenu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav> 
+        <header>
+            <h1>Flap Bird</h1>
+        </header>
+        
+        <section class="project-details">
+            <h2>PROJECT TYPE</h2>
+            <p>Personal Project - Unity, C#</p>
+
+            <h2>Description</h2>
+            <p>FlapBirds is a simple game where players control a bird to navigate through obstacles.</p>
+
+            <h2>LAST UPDATED</h2>
+            <p>2024</p>
+
+            <h2>Development Team</h2>
+            <ul>
+                <li>Zack Cornfield</li>
+            </ul>
+
+            <div class="trailer-container" id="trailer-container">
+                <h2>Trailer</h2>
+                <!-- Trailer video element -->
+                <video id="trailer-video" controls>
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <h2>Features</h2>
+
+            <div class="feature">
+                <h3>Intuitive Controls</h3>
+                <img src="../media/images/FlapBird_Controls.png" alt="Intuitive Controls Feature">
+                <p>Flap Control: Players control the bird by pressing the space bar to flap its wings, causing it to ascend. Releasing the space bar allows the bird to descend due to gravity.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Score Tracking</h3>
+                <img src="../media/images/FlapBird_ScoreTracking.png" alt="Score Tracking Feature">
+                <img src="../media/images/FlapBird_GameOver.png" alt="Score Tracking Feature">
+                <p>High Score Tracking: Keeps track of the highest score achieved and displays it during gameplay.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Obstacles</h3>
+                <img src="../media/images/FlapBird_ScoreTracking.png" alt="Obstacles Feature">
+                <p>Pipes are the main obstacles in the game. They spawn at random heights from the right side of the screen and move leftward. Players must navigate the bird through the gaps between the pipes.
+                    <br><br>
+                    ​Each set of pipes is randomly positioned vertically to ensure variability and challenge in each playthrough.
+                    <br>
+                </p>
+            </div>
+        </section>
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>

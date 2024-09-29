@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Title | Zack Cornfield</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="project-page">
+    <div class="container">
+        <nav>
+            <img src="/media/images/logo_transparent.png" alt="logo" class="logo">   
+            <ul id="sidemenu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav> 
+        <header>
+            <h1>Billiards</h1>
+        </header>
+        
+        <section class="project-details">
+            <h2>PROJECT TYPE</h2>
+            <p>University Project - C, OpenGL</p>
+
+            <h2>Description</h2>
+            <p>A small demo game used to mimic a billiards game. This was our first game development project we did in university and is a single-player game that follows the standard rules of Billiard, allowing players to use and aim a cue to shoot the balls on the table. This project was our first game-related project and required us to figure out and implement semi-realistic physics so that the game would produce expected and realistic outcomes when shooting and hitting the balls.</p>
+
+            <h2>LAST UPDATED</h2>
+            <p>2023</p>
+
+            <h2>Development Team</h2>
+            <ul>
+                <li>Zack Cornfield</li>
+                <li>Thomas Stiles</li>
+                <li>Jacob Mondi</li>
+            </ul>
+
+            <h2>Project Planning and Tools</h2>
+            <ul>
+                <li>Doxygen</li>
+                <li>Weekly Meetings</li>
+            </ul>
+
+            <div class="trailer-container" id="trailer-container">
+                <h2>Trailer</h2>
+                <!-- Trailer video element -->
+                <video id="trailer-video" controls>
+                    <source src="/media/videos/Billiards 15 Promotional Video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <h2>Features Developed by Me</h2>
+
+            <div class="feature">
+                <h3>Ball Class/Algorithm</h3>
+                <img src="../media/images/Billiards_Gameplay.png" alt="Ball Feature">
+                <ul>
+                    <li>Ball Physics: Designed and implemented a class to handle the properties and behaviors of billiard balls, including position, velocity, and collision detection.</li>
+                    <li>Collision Checks: Developed algorithms for checking for collisions between ball-ball and ball-wall.</li>
+                </ul>
+            </div>
+
+            <div class="feature">
+                <h3>Stick Algorithm</h3>
+                <img src="../media/images/Billiards_ScoreTracking.png" alt="Stick Feature">
+                <ul>
+                    <li>Aiming Mechanism: Co-developed the algorithm for the stick's aiming mechanism, allowing players to precisely control the direction and force of their shots.</li>
+                    <li>Force Application: Implemented the logic for applying force to the cue ball, factoring in the angle and power of the shot to produce realistic ball trajectories.</li>
+                </ul>
+            </div>
+
+            <div class="feature">
+                <h3>Stick Class</h3>
+                <ul>
+                    <li>Class Design: Created a class to encapsulate the properties and behaviors of the billiard stick, including position, rotation, and user input handling.</li>
+                    <li>Rendering: Implemented the rendering of the stick using legacy OpenGL, ensuring it visually aligns with the player's aim and interactions.</li>
+                </ul>
+            </div>
+
+            <div class="feature">
+                <h3>Game Loop/Logic</h3>
+                <ul>
+                    <li>Game Logic Integration: Co-developed the main game loop, integrating all game components, including ball physics, stick mechanics, and collision detection.</li>
+                    <li>Frame Management: Ensured smooth gameplay by managing frame updates, rendering cycles, and user inputs effectively within the main game loop.</li>
+                </ul>
+            </div>
+
+            <div class="feature">
+                <h3>Menu/UI</h3>
+                <img src="../media/images/Billiards_GUI.png" alt="Weapon Feature">
+                <img src="../media/images/Billiards_GUI1.png" alt="Weapon Feature">
+                <img src="../media/images/Billiards_GUI2.png" alt="Weapon Feature">
+                <ul>
+                    <li>UI Design: Designed and implemented the game’s menu system, providing options for starting a new game, viewing instructions, and exiting the game.</li>
+                    <li>Navigation: Developed the logic for menu navigation, enabling users to interact with the game’s UI seamlessly.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>

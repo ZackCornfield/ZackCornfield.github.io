@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Title | Zack Cornfield</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="project-page">
+    <div class="container">
+        <nav>
+            <img src="/media/images/logo_transparent.png" alt="logo" class="logo">   
+            <ul id="sidemenu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav> 
+        <header>
+            <h1>Magazine Service - JavaFX</h1>
+        </header>
+        
+        <section class="project-details">
+            <h2>PROJECT TYPE</h2>
+            <p>University Project - Java, JavaFX</p>
+
+            <h2>Description</h2>
+            <p>This application was created using java SE 8 and the JavaFX library for GUI rendering and handling. The purpose was to create a CRUD application designed using OOP. The application supported the serialization of magazines and their customers so they could be loaded and saved from a file. The application also supports limited multithreading when processing the view information.</p>
+
+            <h2>LAST UPDATED</h2>
+            <p>2024</p>
+
+            <h2>Development Team</h2>
+            <ul>
+                <li>Zack Cornfield</li>
+            </ul>
+
+            <h2>Project Planning and Tools</h2>
+            <ul>
+                <li>Trello</li>
+                <li>Git with GitHub for source control</li>
+                <li>GitHub Desktop</li>
+                <li>Doxygen</li>
+            </ul>
+
+            <div class="trailer-container" id="trailer-container">
+                <h2>Trailer</h2>
+                <!-- Trailer video element -->
+                <video id="trailer-video" controls>
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <h2>Features Developed by Me</h2>
+
+            <div class="feature">
+                <h3>Create</h3>
+                <img src="../media/images/MagazineService_Create.png" alt="Create Tab">
+                <p>The creation pane guides the user through creating a new magazine, the supplements it offers, and the customers who will use the new magazine, if there are any, to begin with. Invalid information is not accepted, and a message will be shown to the user to explain how to fix the issue.</p>
+            </div>
+
+            <div class="feature">
+                <h3>Edit</h3>
+                <img src="../media/images/MagazineService_EditCustomer.png" alt="Edit Tab">
+                <img src="../media/images/MagazineService_EditSupplement.png" alt="Edit Tab">
+                <p>The edit pane allows the user to edit existing supplements or customers using a table view. Exceptions will be caught and explained to the user if the new information is invalid.</p>
+            </div>
+
+            <div class="feature">
+                <h3>View</h3>
+                <img src="../media/images/MagazineService_ViewCustomer.png" alt="View Tab">
+                <img src="../media/images/MagazineService_ViewSupplement.png" alt="View Tab">
+                <p>The view pane allows the user to view the supplement and customer information (including their billing emails), without being able to edit it.</p>
+            </div>
+        </section>
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>
