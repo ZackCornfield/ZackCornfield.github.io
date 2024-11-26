@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Title | Zack Cornfield</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="project-page">
+    <div class="container">
+        <nav>
+            <img src="/media/images/logo_transparent.png" alt="logo" class="logo">   
+            <ul id="sidemenu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav> 
+        <header>
+            <h1>Murdoch Walkthrough - Game Engine</h1>
+        </header>
+        
+        <section class="project-details">
+            <h2>PROJECT TYPE</h2>
+            <p>University Project -  C++, GLFW (OpenGL), LUA, ImGUI, Stb_image, CMAKE, GitHub</p>
+
+            <h2>Description</h2>
+            <p>
+                <strong>Murdoch Walkthrough</strong> is a simulation designed to recreate a chosen area within our university campus. The project offers an interactive walkthrough experience while showcasing realistic Newtonian physics and engaging NPC interactions.
+            </p>
+            
+            <br>
+            <h3>Physics Requirements</h3>
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li>Develop a custom resolution system incorporating linear and angular physics.</li>
+            </ul>
+            
+            <br>
+            <h4>What We Accomplished:</h4>
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li>Created a custom resolution system with robust support for both linear and angular physics.</li>
+                <li>Designed and implemented a custom collision detection system for precise interactions.</li>
+            </ul>
+            
+            <br>
+            <h3>AI Requirements</h3>
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li>Develop an NPC system using an emotion model of our choice to create unique interactions.</li>
+            </ul>
+            
+            <br>
+            <h4>What We Accomplished:</h4>
+            <ul style="list-style-type: disc; padding-left: 20px;">
+                <li>Implemented an NPC system using a BDI (Belief, Desire, Intention) model for dynamic and believable NPC behaviors.</li>
+                <li>Developed an emotion model for NPCs using FCM (Fuzzy Cognitive Maps).</li>
+                <li>Built a custom pathfinding system to enable NPCs to navigate the environment effectively.</li>
+                <li>Created a custom dialogue system allowing NPCs to interact with the player. This included a Python interpreter for sentiment analysis and a chatbot system.</li>
+            </ul>
+            
+            <br>
+            <h3>Additional Features</h3>
+            <p>
+                To enhance usability, we developed an <strong>Engine GUI</strong> using ImGUI, which enabled us to easily create and manage scenes and objects within the engine.
+            </p>        
+            <br>   
+
+            <h2>LAST UPDATED</h2>
+            <p>2024</p>
+
+            <h2>Development Team</h2>
+            <ul>
+                <li>Zack Cornfield</li>
+                <li>Thomas Stiles</li>
+                <li>Jacob Mondi</li>
+                <li>Milad Rakhshbahar</li>
+            </ul>
+
+            <h2>Project Planning and Tools</h2>
+            <ul>
+                <li>Weekly meetings</li>
+                <li>Milanote</li>
+                <li>Git with GitHub for source control</li>
+                <li>GitHub Desktop</li>
+                <li>Doxygen</li>
+                <li>Microsoft Project</li>
+
+                <img src="../media/images/MurdochWalkthrough/PM.png" alt="PM">
+            </ul>
+
+            <div class="trailer-container" id="trailer-container">
+                <h2>Trailer</h2>
+            
+                <div class="trailer-section">
+                    <h3>Milestone 2</h3>
+                    <video id="trailer-video" controls>
+                        <source src="/media/videos/CobaltTrailer.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            
+                <div class="trailer-section">
+                    <h3>Milestone 1</h3>
+                    <video id="trailer-video" controls>
+                        <source src="/media/videos/ICT398Milestone1LSCustomsTrailer.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>            
+
+            <h2>Features Developed by Me</h2>
+
+            <div class="feature">
+                <h3>Rendering Logic</h3>
+                <img src="../media/images/MurdochWalkthrough/Environment.png" alt="Environment">
+                <p>Contributed to the mesh rendering process by iterating through all entities with meshes and implementing the logic to render them. Developed the texture manager system for efficient loading and usage of textures, the shader manager for handling shader programs, and the material manager for managing material properties and components. These systems collectively ensure efficient and high-quality rendering within the game engine.</p>
+            </div>
+
+            <div class="feature"> 
+                <h3>Physics System</h3>
+                <img src="../media/images/MurdochWalkthrough/Physics.png" alt="Physics">
+                <p>Designed and implemented a custom resolution system with robust support for both linear and angular physics. Developed a collision detection system for precise interactions, ensuring realistic and engaging physics within the simulation.</p> 
+            </div>
+            
+            <div class="feature">
+                <h3>World Creation/Design</h3>
+                <img src="../media/images/MurdochWalkthrough/Environment.png" alt="Environment">
+                <img src="../media/images/MurdochWalkthrough/3DScan.png" alt="3DScan">
+                <p>Collaborated on the creation and design of the world environment, ensuring a realistic and immersive experience for users. Utilized 3D scanning technology to capture and replicate the chosen area within the university campus, enhancing the authenticity and detail of the simulation.</p>
+            </div>
+
+        </section>
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>

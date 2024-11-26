@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Title | Zack Cornfield</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="project-page">
+    <div class="container">
+        <nav>
+            <img src="/media/images/logo_transparent.png" alt="logo" class="logo">   
+            <ul id="sidemenu">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav> 
+        <header>
+            <h1>Maths Play - Unity</h1>
+        </header>
+        
+        <section class="project-details">
+            <h2>PROJECT TYPE</h2>
+            <p>University Project - Unity, C#</p>
+
+            <h2>Description</h2>
+            <p>
+                "Math’s Play" is a mixed reality (MR) and desktop app that redefines math education for students and teachers. It combines technology with interactive learning to make math engaging and accessible. Key features include:
+            </p>
+            <ul>
+                <li><strong>For Teachers:</strong>
+                    <ul style="list-style-type: disc; padding-left: 20px;">
+                        <li>Create custom virtual classrooms and assign students to networked rooms.</li>
+                        <li>Send dynamic math modules (in JSON format) for real-time interaction.</li>
+                        <li>Use a powerful node-based engine to design and modify lessons with ease.</li>
+                    </ul>
+                </li>
+                <li><strong>For Students:</strong>
+                    <ul style="list-style-type: disc; padding-left: 20px;">
+                        <li>Join assigned rooms and engage with interactive math modules.</li>
+                        <li>Collaborate with peers to explore and solve problems together.</li>
+                    </ul>
+                </li>
+            </ul>
+            <h4>Client Collaboration</h4>
+            <p>
+                This project was developed in collaboration with a lecturer in Mathematics and Science Education from Murdoch’s School of Education. The lecturer provided key insights into the needs of educators and students, shaping the design and functionality of the application. Working with a real client gave us valuable experience in understanding and addressing user requirements while ensuring the final product aligned with educational goals.
+            </p>           
+
+            <h2>LAST UPDATED</h2>
+            <p>2024</p>
+
+            <h2>Development Team</h2>
+            <ul>
+                <li>Zack Cornfield</li>
+                <li>Thomas Stiles</li>
+                <li>Jacob Mondi</li>
+                <li>Milad Rakhshbahar</li>
+                <li>Adam Dabre</li>
+                <li>Matthew Bradford</li>
+            </ul>
+
+            <h2>Project Planning and Tools</h2>
+            <ul>
+                <li>Weekly meetings</li>
+                <li>Milanote</li>
+                <li>Git with GitHub for source control</li>
+                <li>GitHub Desktop</li>
+                <li>Doxygen</li>
+                <li>Microsoft Project</li>
+            </ul>
+
+            <div class="trailer-container" id="trailer-container">
+                <h2>Trailer</h2>
+                <!-- Trailer video element -->
+                <video id="trailer-video" controls>
+                    <source src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <h2>Features Developed by Me</h2>
+
+            <div class="feature">
+                <h3>UI</h3>
+                <img src="../media/images/MathsPlay/UI.png" alt="UI">
+                <img src="../media/images/MathsPlay/UI1.png" alt="UI">
+                <p>
+                    Designed and implemented an intuitive user interface to ensure ease of use for both teachers and students. 
+                    The UI includes features like creating, modifying, and managing math modules, along with seamless navigation for interactive learning.
+                </p>
+            </div>
+            
+            <div class="feature">
+                <h3>Nodes/Backend</h3>
+                <img src="../media/images/MathsPlay/Nodes.png" alt="Nodes">
+                <p>
+                    Developed a node-based backend system that serves as the core of the module creation engine. Teachers can use 
+                    this to build interactive lessons by connecting nodes representing variables, equations, and functions. This modular system makes lesson customization flexible and efficient.
+                </p>
+            </div>
+            
+            <div class="feature">
+                <h3>3D Axis System</h3>
+                <img src="../media/images/MathsPlay/3DAxisSystem.png" alt="3D Axis System">
+                <p>
+                    Created an optional 3D axis system that can be toggled on node models to aid in visualizing spatial relationships. 
+                    Includes an interactive menu to toggle grid lines, reset the grid, and adjust settings, enhancing the clarity of 3D visualizations.
+                </p>
+            </div>
+            
+            <div class="feature">
+                <h3>Scene Placement</h3>
+                <img src="../media/images/MathsPlay/PlacementScene.png" alt="Scene Placement">
+                <p>
+                    Developed a scene placement feature that allows users to position and move 3D vector nodes within the environment. 
+                    This ensures precise placement and alignment of nodes, making it easier for students to interact with the scene during gameplay.
+                </p> 
+            </div>     
+        </section>       
+    <script src="project.js"></script>
+</body>
+</html>
