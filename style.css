@@ -502,8 +502,6 @@ nav .fa-solid{
     margin-top: 50px;
 }
 
-/*-----------------projects-page-----------------------*/ 
-
 /* -----------------Projects Page----------------- */
 
 .project-details {
@@ -515,8 +513,8 @@ nav .fa-solid{
 }
 
 .project-details h2 {
-    color: #ff004f;
-    border-bottom: 2px solid #ff004f;
+    color: #adadad;
+    border-bottom: 2px solid #868585;
     padding-bottom: 8px;
     margin-bottom: 16px;
     font-size: 24px;
@@ -577,7 +575,7 @@ nav .fa-solid{
 
 .feature h3 {
     margin: 0 0 10px 0;
-    color: #ff004f;
+    color: #adadad;
     font-size: 20px;
 }
 
